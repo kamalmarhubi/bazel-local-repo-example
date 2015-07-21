@@ -1,0 +1,9 @@
+local_repository(
+    name = "bazel-repo-1",
+    path = "/home/kamal/tmp/bazel-repo-1",
+)
+
+bind(
+    name = "hi-lib",
+    actual = "@bazel-repo-1//:hi",
+)
