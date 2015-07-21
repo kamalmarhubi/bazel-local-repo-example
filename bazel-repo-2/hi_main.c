@@ -1,4 +1,4 @@
-#include "hi.h"
+#include "external/bazel-repo-1/hi.h"
 
 int main() {
     print_greeting("y'all");
