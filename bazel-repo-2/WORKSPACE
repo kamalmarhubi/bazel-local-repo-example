@@ -5,5 +5,5 @@ local_repository(
 
 bind(
     name = "hi-lib",
-    actual = "@bazel-repo-1//:hi",
+    actual = "@bazel-repo-1//a-package:hi",
 )
