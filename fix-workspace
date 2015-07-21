@@ -1,0 +1,6 @@
+#!/bin/bash
+
+GIT_TOPLEVEL=$(git rev-parse --show-toplevel)
+WORKSPACE_TO_FIX=$GIT_TOPLEVEL/bazel-repo-2/WORKSPACE
+
+sed -i "s:GIT_TOPLEVEL:$GIT_TOPLEVEL:" $WORKSPACE_TO_FIX
